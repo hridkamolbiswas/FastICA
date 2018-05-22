@@ -51,7 +51,7 @@ matrix=[];
 for p=1:ncomp
 
     wp=rand(n,1);
-    
+    wp=wp/norm(wp);
     
 for iter=1:maxiter
   u=wp'*x;
